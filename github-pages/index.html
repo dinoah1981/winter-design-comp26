@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winter 2026 Design Competition</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 
+    ============================================
+    EDIT YOUR LINKS HERE - EASY TO FIND!
+    ============================================
+    Just replace the example URLs with your actual Google Doc/Sheet links
+  -->
+  <script>
+    // BASIC COMPETITION MATERIALS LINKS
+    const LINKS = {
+      // Basic Materials
+      schedule: "https://docs.google.com/spreadsheets/d/YOUR_SPREADSHEET_ID/edit",
+      rubric: "https://docs.google.com/document/d/YOUR_RUBRIC_DOC_ID/edit",
+      rules: "https://docs.google.com/document/d/YOUR_RULES_DOC_ID/edit",
+      roles: "https://docs.google.com/document/d/YOUR_ROLES_DOC_ID/edit",
+      
+      // Team Time Materials
+      advisorSlides: "https://docs.google.com/presentation/d/YOUR_SLIDES_ID/edit",
+      filmAnalysis: "https://docs.google.com/document/d/YOUR_ANALYSIS_DOC_ID/edit",
+      storyOutline: "https://docs.google.com/document/d/YOUR_OUTLINE_DOC_ID/edit",
+      roleAssignment: "https://docs.google.com/document/d/YOUR_ASSIGNMENT_DOC_ID/edit",
+      
+      // Monday Workshops
+      monTopicSlides: "#",
+      monTopicPlan: "#",
+      monStorySlides: "#",
+      monStoryPlan: "#",
+      
+      // Tuesday Workshops
+      tueAiSlides: "#",
+      tueAiPlan: "#",
+      tueCineSlides: "#",
+      tueCinePlan: "#",
+      tueInterviewSlides: "#",
+      tueInterviewPlan: "#",
+      tueBrollSlides: "#",
+      tueBrollPlan: "#",
+      
+      // Wednesday Workshops
+      wedEditSlides: "#",
+      wedEditPlan: "#",
+      wedSoundSlides: "#",
+      wedSoundPlan: "#",
+      wedColorSlides: "#",
+      wedColorPlan: "#",
+      wedFinalSlides: "#",
+      wedFinalPlan: "#",
+      
+      // Resources
+      tedTalks: "#",
+      equipment: "#",
+      editing: "#",
+      copyright: "#",
+      releaseForms: "#",
+      festivalGuide: "#"
+    };
+  </script>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-content">
+      <a href="#" class="logo">FOR THE CULTURE</a>
+      <nav class="nav">
+        <a href="#materials" class="nav-link">Materials</a>
+        <a href="#workshops" class="nav-link">Schedule</a>
+        <a href="#resources" class="nav-link">Resources</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#materials" class="mobile-nav-link">Materials</a>
+      <a href="#workshops" class="mobile-nav-link">Schedule</a>
+      <a href="#resources" class="mobile-nav-link">Resources</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/hero-filmmaker.jpg" alt="Filmmaker silhouette">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">For The Culture</p>
+      <h1 class="hero-title">Winter 2026<br>Design Competition</h1>
+      <p class="hero-subtitle">Create. Collaborate. Compete.</p>
+      <a href="#materials" class="btn btn-primary">Explore Materials</a>
+    </div>
+    <div class="scroll-indicator">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section class="overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-text">
+          <p class="section-eyebrow">The Challenge</p>
+          <h2 class="section-title">Tell Your Story</h2>
+          <p class="overview-body">
+            Each team will plan, produce, and screen a <strong>3-8 minute short film</strong> 
+            that communicates a clear, compelling docu-story grounded in authentic voice, 
+            lived experience, or a meaningful idea connected to community or identity.
+          </p>
+          <p class="overview-secondary">
+            Films should feel intentional, structured, and polished—not simply recorded 
+            footage, but designed storytelling with purpose.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <p class="stat-number">3-8</p>
+              <p class="stat-label">Minutes</p>
+            </div>
+            <div class="stat">
+              <p class="stat-number">4</p>
+              <p class="stat-label">Team Roles</p>
+            </div>
+          </div>
+        </div>
+        <div class="overview-image">
+          <img src="images/vintage-camera.jpg" alt="Vintage film camera">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Basic Materials Section -->
+  <section class="basic-materials" id="materials">
+    <div class="container">
+      <div class="section-header text-center">
+        <p class="section-eyebrow light">Get Started</p>
+        <h2 class="section-title light">Basic Competition Materials</h2>
+      </div>
+      <div class="materials-grid">
+        <a href="#" class="material-card" data-link="schedule">
+          <div class="material-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <div class="material-content">
+            <h3 class="material-title">Schedule & Master Spreadsheet</h3>
+            <p class="material-desc">Complete competition timeline, deadlines, and team assignments.</p>
+          </div>
+          <svg class="material-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+
+        <a href="#" class="material-card" data-link="rubric">
+          <div class="material-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 11l3 3L22 4"/>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+            </svg>
+          </div>
+          <div class="material-content">
+            <h3 class="material-title">Judging Rubric</h3>
+            <p class="material-desc">Evaluation criteria and scoring guidelines for films.</p>
+          </div>
+          <svg class="material-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+
+        <a href="#" class="material-card" data-link="rules">
+          <div class="material-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <div class="material-content">
+            <h3 class="material-title">Competition Rules</h3>
+            <p class="material-desc">Official rules, requirements, and submission guidelines.</p>
+          </div>
+          <svg class="material-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+
+        <a href="#" class="material-card" data-link="roles">
+          <div class="material-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="material-content">
+            <h3 class="material-title">Team Roles Guide</h3>
+            <p class="material-desc">Director, Story Lead, Cinematographer, and Editor responsibilities.</p>
+          </div>
+          <svg class="material-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Time Materials Section -->
+  <section class="team-materials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Advisory Period</p>
+        <h2 class="section-title">Team Time Materials</h2>
+      </div>
+      <div class="team-list">
+        <a href="#" class="team-item" data-link="advisorSlides">
+          <div class="team-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <div class="team-content">
+            <h3 class="team-title">Advisor Slide Deck <svg class="team-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></h3>
+            <p class="team-desc">Daily presentation slides for advisory sessions. Covers competition overview, daily goals, and check-ins.</p>
+          </div>
+        </a>
+
+        <a href="#" class="team-item" data-link="filmAnalysis">
+          <div class="team-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
+              <line x1="7" y1="2" x2="7" y2="22"/>
+              <line x1="17" y1="2" x2="17" y2="22"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <line x1="2" y1="7" x2="7" y2="7"/>
+              <line x1="2" y1="17" x2="7" y2="17"/>
+              <line x1="17" y1="17" x2="22" y2="17"/>
+              <line x1="17" y1="7" x2="22" y2="7"/>
+            </svg>
+          </div>
+          <div class="team-content">
+            <h3 class="team-title">Film Analysis Template <svg class="team-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></h3>
+            <p class="team-desc">Monday worksheet for analyzing documentary films and TED Talks. Study storytelling techniques.</p>
+          </div>
+        </a>
+
+        <a href="#" class="team-item" data-link="storyOutline">
+          <div class="team-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+            </svg>
+          </div>
+          <div class="team-content">
+            <h3 class="team-title">Story Outline Worksheet <svg class="team-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></h3>
+            <p class="team-desc">Tuesday worksheet for developing your film concept, structure, and narrative arc.</p>
+          </div>
+        </a>
+
+        <a href="#" class="team-item" data-link="roleAssignment">
+          <div class="team-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="8.5" cy="7" r="4"/>
+              <polyline points="17 11 19 13 23 9"/>
+            </svg>
+          </div>
+          <div class="team-content">
+            <h3 class="team-title">Role Assignment Sheet <svg class="team-link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></h3>
+            <p class="team-desc">Team organization document. Assign and track Director, Story Lead, Cinematographer, and Editor roles.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshop Materials Section -->
+  <section class="workshops" id="workshops">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Daily Workshops</p>
+        <h2 class="section-title">Workshop Materials</h2>
+      </div>
+
+      <!-- Monday -->
+      <div class="workshop-day">
+        <div class="day-header">
+          <h3 class="day-title">Monday</h3>
+          <span class="day-theme">Pre-Production</span>
+        </div>
+        <div class="workshop-grid">
+          <div class="workshop-card">
+            <h4 class="workshop-name">Choosing Your Topic</h4>
+            <div class="workshop-links">
+              <a href="#" class="btn btn-small btn-dark" data-link="monTopicSlides">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Slides
+              </a>
+              <a href="#" class="btn btn-small btn-outline" data-link="monTopicPlan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Plan
+              </a>
+            </div>
+          </div>
+          <div class="workshop-card">
+            <h4 class="workshop-name">Story Development</h4>
+            <div class="workshop-links">
+              <a href="#" class="btn btn-small btn-dark" data-link="monStorySlides">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Slides
+              </a>
+              <a href="#" class="btn btn-small btn-outline" data-link="monStoryPlan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Plan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tuesday -->
+      <div class="workshop-day">
+        <div class="day-header">
+          <h3 class="day-title">Tuesday</h3>
+          <span class="day-theme">Production</span>
+        </div>
+        <div class="workshop-grid">
+          <div class="workshop-card">
+            <h4 class="workshop-name">Ethical Research with AI</h4>
+            <div class="workshop-links">
+              <a href="#" class="btn btn-small btn-dark" data-link="tueAiSlides">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Slides
+              </a>
+              <a href="#" class="btn btn-small btn-outline" data-link="tueAiPlan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Plan
+              </a>
+            </div>
+          </div>
+          <div class="workshop-card">
+            <h4 class="workshop-name">Cinematography Basics</h4>
+            <div class="workshop-links">
+              <a href="#" class="btn btn-small btn-dark" data-link="tueCineSlides">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Slides
+              </a>
+              <a href="#" class="btn btn-small btn-outline" data-link="tueCinePlan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Plan
+              </a>
+            </div>
+          </div>
+          <div class="workshop-card">
+            <h4 class="workshop-name">Interview Techniques</h4>
+            <div class="workshop-links">
+              <a href="#" class="btn btn-small btn-dark" data-link="tueInterviewSlides">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Slides
+              </a>
+              <a href="#" class="btn btn-small btn-outline" data-link="tueInterviewPlan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Plan
+              </a>
+            </div>
+          </div>
+          <div class="workshop-card">
+            <h4 class="workshop-name">B-Roll & Visual Storytelling</h4>
+            <div class="workshop-links">
+              <a href="#" class="btn btn-small btn-dark" data-link="tueBrollSlides">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Slides
+              </a>
+              <a href="#" class="btn btn-small btn-outline" data-link="tueBrollPlan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Plan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wednesday -->
+      <div class="workshop-day">
+        <div class="day-header">
+          <h3 class="day-title">Wednesday</h3>
+          <span class="day-theme">Post-Production</span>
+        </div>
+        <div class="workshop-grid">
+          <div class="workshop-card">
+            <h4 class="workshop-name">Editing Fundamentals</h4>
+            <div class="workshop-links">
+              <a href="#" class="btn btn-small btn-dark" data-link="wedEditSlides">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Slides
+              </a>
+              <a href="#" class="btn btn-small btn-outline" data-link="wedEditPlan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Plan
+              </a>
+            </div>
+          </div>
+          <div class="workshop-card">
+            <h4 class="workshop-name">Sound Design & Music</h4>
+            <div class="workshop-links">
+              <a href="#" class="btn btn-small btn-dark" data-link="wedSoundSlides">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Slides
+              </a>
+              <a href="#" class="btn btn-small btn-outline" data-link="wedSoundPlan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Plan
+              </a>
+            </div>
+          </div>
+          <div class="workshop-card">
+            <h4 class="workshop-name">Color Correction</h4>
+            <div class="workshop-links">
+              <a href="#" class="btn btn-small btn-dark" data-link="wedColorSlides">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Slides
+              </a>
+              <a href="#" class="btn btn-small btn-outline" data-link="wedColorPlan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Plan
+              </a>
+            </div>
+          </div>
+          <div class="workshop-card">
+            <h4 class="workshop-name">Finalizing Your Film</h4>
+            <div class="workshop-links">
+              <a href="#" class="btn btn-small btn-dark" data-link="wedFinalSlides">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Slides
+              </a>
+              <a href="#" class="btn btn-small btn-outline" data-link="wedFinalPlan">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Plan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prizes Section -->
+  <section class="prizes">
+    <div class="container">
+      <div class="section-header text-center">
+        <p class="section-eyebrow light">Recognition</p>
+        <h2 class="section-title light">Prizes & Recognition</h2>
+        <p class="section-subtitle light">
+          The five highest-scoring films overall will receive automatic submission 
+          and screening consideration at prestigious film festivals.
+        </p>
+      </div>
+      <div class="prizes-grid">
+        <div class="prize-card">
+          <svg class="prize-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
+            <line x1="7" y1="2" x2="7" y2="22"/>
+            <line x1="17" y1="2" x2="17" y2="22"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <line x1="2" y1="7" x2="7" y2="7"/>
+            <line x1="2" y1="17" x2="7" y2="17"/>
+            <line x1="17" y1="17" x2="22" y2="17"/>
+            <line x1="17" y1="7" x2="22" y2="7"/>
+          </svg>
+          <h3 class="prize-name">Harlem International Film Festival</h3>
+        </div>
+        <div class="prize-card">
+          <svg class="prize-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="8" r="7"/>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+          </svg>
+          <h3 class="prize-name">Tribeca Festival</h3>
+        </div>
+        <div class="prize-card">
+          <svg class="prize-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          <h3 class="prize-name">Lower East Side Film Festival</h3>
+        </div>
+        <div class="prize-card">
+          <svg class="prize-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="8" r="7"/>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+          </svg>
+          <h3 class="prize-name">African Film Festival</h3>
+        </div>
+      </div>
+      <p class="prizes-note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        All participants receive a certificate of completion
+      </p>
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section class="resources" id="resources">
+    <div class="container">
+      <div class="section-header text-center">
+        <p class="section-eyebrow">Learn More</p>
+        <h2 class="section-title">Recommended Resources</h2>
+      </div>
+      <div class="resources-grid">
+        <a href="#" class="resource-card" data-link="tedTalks">
+          <div class="resource-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+          </div>
+          <svg class="resource-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <h3 class="resource-title">TED Talks on Storytelling</h3>
+          <p class="resource-desc">Curated playlist of inspiring talks about narrative and communication.</p>
+        </a>
+
+        <a href="#" class="resource-card" data-link="equipment">
+          <div class="resource-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          </div>
+          <svg class="resource-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <h3 class="resource-title">Film Equipment Guide</h3>
+          <p class="resource-desc">Camera, audio, and lighting basics for documentary filmmaking.</p>
+        </a>
+
+        <a href="#" class="resource-card" data-link="editing">
+          <div class="resource-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+          </div>
+          <svg class="resource-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <h3 class="resource-title">Editing Software Tutorials</h3>
+          <p class="resource-desc">Premiere Pro and DaVinci Resolve getting started guides.</p>
+        </a>
+
+        <a href="#" class="resource-card" data-link="copyright">
+          <div class="resource-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <svg class="resource-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <h3 class="resource-title">Copyright & Fair Use</h3>
+          <p class="resource-desc">Legal guidelines for using music, footage, and images.</p>
+        </a>
+
+        <a href="#" class="resource-card" data-link="releaseForms">
+          <div class="resource-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <svg class="resource-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <h3 class="resource-title">Release Forms</h3>
+          <p class="resource-desc">Talent and location release form templates.</p>
+        </a>
+
+        <a href="#" class="resource-card" data-link="festivalGuide">
+          <div class="resource-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <svg class="resource-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <h3 class="resource-title">Film Festival Guide</h3>
+          <p class="resource-desc">Tips for submitting to and screening at film festivals.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">FOR THE CULTURE</div>
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Contact</a>
+        </nav>
+        <p class="footer-copy">&copy; 2026 Comp Sci High. All rights reserved.</p>
+      </div>
+      <div class="footer-tagline">
+        Winter 2026 Design Competition
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
