@@ -6,54 +6,8 @@
 // ============================================
 // LINK CONFIGURATION
 // ============================================
-// Edit these URLs to point to your actual Google Docs/Sheets
-const LINKS = {
-  // Basic Materials
-  schedule: "https://docs.google.com/spreadsheets/d/YOUR_SPREADSHEET_ID/edit",
-  rubric: "https://docs.google.com/document/d/YOUR_RUBRIC_DOC_ID/edit",
-  rules: "https://docs.google.com/document/d/YOUR_RULES_DOC_ID/edit",
-  roles: "https://docs.google.com/document/d/YOUR_ROLES_DOC_ID/edit",
-  
-  // Team Time Materials
-  advisorSlides: "https://docs.google.com/presentation/d/YOUR_SLIDES_ID/edit",
-  filmAnalysis: "https://docs.google.com/document/d/YOUR_ANALYSIS_DOC_ID/edit",
-  storyOutline: "https://docs.google.com/document/d/YOUR_OUTLINE_DOC_ID/edit",
-  roleAssignment: "https://docs.google.com/document/d/YOUR_ASSIGNMENT_DOC_ID/edit",
-  
-  // Monday Workshops
-  monTopicSlides: "#",
-  monTopicPlan: "#",
-  monStorySlides: "#",
-  monStoryPlan: "#",
-  
-  // Tuesday Workshops
-  tueAiSlides: "#",
-  tueAiPlan: "#",
-  tueCineSlides: "#",
-  tueCinePlan: "#",
-  tueInterviewSlides: "#",
-  tueInterviewPlan: "#",
-  tueBrollSlides: "#",
-  tueBrollPlan: "#",
-  
-  // Wednesday Workshops
-  wedEditSlides: "#",
-  wedEditPlan: "#",
-  wedSoundSlides: "#",
-  wedSoundPlan: "#",
-  wedColorSlides: "#",
-  wedColorPlan: "#",
-  wedFinalSlides: "#",
-  wedFinalPlan: "#",
-  
-  // Resources
-  tedTalks: "#",
-  equipment: "#",
-  editing: "#",
-  copyright: "#",
-  releaseForms: "#",
-  festivalGuide: "#"
-};
+// Links are defined in the <script> tag in index.html
+// Edit them there — the LINKS variable is already available globally
 
 // ============================================
 // APPLY LINKS TO ELEMENTS
