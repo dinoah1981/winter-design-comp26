@@ -20,7 +20,9 @@ function applyLinks() {
     const linkKey = element.getAttribute('data-link');
     if (LINKS[linkKey]) {
       element.setAttribute('href', LINKS[linkKey]);
-      
+      element.setAttribute('target', '_blank');
+      element.setAttribute('rel', 'noopener noreferrer');
+
       // If it's a placeholder link (#), add a click handler to alert the user
       if (LINKS[linkKey] === '#') {
         element.addEventListener('click', (e) => {
