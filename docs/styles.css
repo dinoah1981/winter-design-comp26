@@ -953,6 +953,45 @@ a {
 }
 
 /* ============================================
+   CINEMATIC PARALLAX DIVIDERS
+   ============================================ */
+.parallax-divider {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .parallax-divider {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .parallax-divider {
+    height: 360px;
+  }
+}
+
+.parallax-divider::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.parallax-divider img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  filter: grayscale(100%) contrast(1.1);
+}
+
+/* ============================================
    SCROLL REVEAL ANIMATIONS
    ============================================ */
 .reveal {
