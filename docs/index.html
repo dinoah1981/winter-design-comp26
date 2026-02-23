@@ -31,31 +31,11 @@
       storyOutline: "https://docs.google.com/document/d/YOUR_OUTLINE_DOC_ID/edit",
       roleAssignment: "https://docs.google.com/spreadsheets/d/1va_a5YkazxJY9ojPMr_VXAhNpQ1X8m-mnfp-m9MT3KE/edit?usp=sharing",
       
-      // Monday Workshops
-      monTopicSlides: "#",
-      monTopicPlan: "#",
-      monStorySlides: "#",
-      monStoryPlan: "#",
-      
-      // Tuesday Workshops
-      tueAiSlides: "#",
-      tueAiPlan: "#",
-      tueCineSlides: "#",
-      tueCinePlan: "#",
-      tueInterviewSlides: "#",
-      tueInterviewPlan: "#",
-      tueBrollSlides: "#",
-      tueBrollPlan: "#",
-      
-      // Wednesday Workshops
-      wedEditSlides: "#",
-      wedEditPlan: "#",
-      wedSoundSlides: "#",
-      wedSoundPlan: "#",
-      wedColorSlides: "#",
-      wedColorPlan: "#",
-      wedFinalSlides: "#",
-      wedFinalPlan: "#",
+      // Workshop Materials (By Role)
+      director: "https://www.canva.com/design/DAHAHd5O3j8/jfhojHnsG4rbUWLYO374dg/edit",
+      cinematographer: "https://www.canva.com/design/DAHB5mwL30Y/hfeffcvU9gKAMSNIznhMTg/edit",
+      storyDeveloper: "https://www.canva.com/design/DAHBtdlndys/-UxiV8LJbUbTjU51FfwpUw/edit",
+      editor: "https://www.canva.com/design/DAHCE4IgOfw/Pe_dVemfnlyOJ3WijLAoig/edit",
       
       // Resources
       tedTalks: "ted-talks.html",
@@ -289,168 +269,54 @@
   <section class="workshops" id="workshops">
     <div class="container">
       <div class="section-header">
-        <p class="section-eyebrow">Daily Workshops</p>
+        <p class="section-eyebrow">By Role</p>
         <h2 class="section-title">Workshop Materials</h2>
       </div>
 
-      <!-- Monday -->
-      <div class="workshop-day">
-        <div class="day-header">
-          <h3 class="day-title">Monday</h3>
-          <span class="day-theme">Pre-Production</span>
-        </div>
-        <div class="workshop-grid">
-          <div class="workshop-card">
-            <h4 class="workshop-name">Choosing Your Topic</h4>
-            <div class="workshop-links">
-              <a href="#" class="btn btn-small btn-dark" data-link="monTopicSlides">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Slides
-              </a>
-              <a href="#" class="btn btn-small btn-outline" data-link="monTopicPlan">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Plan
-              </a>
-            </div>
+      <div class="workshop-grid">
+        <a href="#" class="material-card" data-link="director">
+          <div class="material-content">
+            <h3 class="material-title">Director</h3>
           </div>
-          <div class="workshop-card">
-            <h4 class="workshop-name">Story Development</h4>
-            <div class="workshop-links">
-              <a href="#" class="btn btn-small btn-dark" data-link="monStorySlides">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Slides
-              </a>
-              <a href="#" class="btn btn-small btn-outline" data-link="monStoryPlan">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Plan
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+          <svg class="material-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
 
-      <!-- Tuesday -->
-      <div class="workshop-day">
-        <div class="day-header">
-          <h3 class="day-title">Tuesday</h3>
-          <span class="day-theme">Production</span>
-        </div>
-        <div class="workshop-grid">
-          <div class="workshop-card">
-            <h4 class="workshop-name">Ethical Research with AI</h4>
-            <div class="workshop-links">
-              <a href="#" class="btn btn-small btn-dark" data-link="tueAiSlides">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Slides
-              </a>
-              <a href="#" class="btn btn-small btn-outline" data-link="tueAiPlan">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Plan
-              </a>
-            </div>
+        <a href="#" class="material-card" data-link="cinematographer">
+          <div class="material-content">
+            <h3 class="material-title">Cinematographer</h3>
           </div>
-          <div class="workshop-card">
-            <h4 class="workshop-name">Cinematography Basics</h4>
-            <div class="workshop-links">
-              <a href="#" class="btn btn-small btn-dark" data-link="tueCineSlides">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Slides
-              </a>
-              <a href="#" class="btn btn-small btn-outline" data-link="tueCinePlan">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Plan
-              </a>
-            </div>
-          </div>
-          <div class="workshop-card">
-            <h4 class="workshop-name">Interview Techniques</h4>
-            <div class="workshop-links">
-              <a href="#" class="btn btn-small btn-dark" data-link="tueInterviewSlides">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Slides
-              </a>
-              <a href="#" class="btn btn-small btn-outline" data-link="tueInterviewPlan">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Plan
-              </a>
-            </div>
-          </div>
-          <div class="workshop-card">
-            <h4 class="workshop-name">B-Roll & Visual Storytelling</h4>
-            <div class="workshop-links">
-              <a href="#" class="btn btn-small btn-dark" data-link="tueBrollSlides">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Slides
-              </a>
-              <a href="#" class="btn btn-small btn-outline" data-link="tueBrollPlan">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Plan
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+          <svg class="material-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
 
-      <!-- Wednesday -->
-      <div class="workshop-day">
-        <div class="day-header">
-          <h3 class="day-title">Wednesday</h3>
-          <span class="day-theme">Post-Production</span>
-        </div>
-        <div class="workshop-grid">
-          <div class="workshop-card">
-            <h4 class="workshop-name">Editing Fundamentals</h4>
-            <div class="workshop-links">
-              <a href="#" class="btn btn-small btn-dark" data-link="wedEditSlides">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Slides
-              </a>
-              <a href="#" class="btn btn-small btn-outline" data-link="wedEditPlan">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Plan
-              </a>
-            </div>
+        <a href="#" class="material-card" data-link="storyDeveloper">
+          <div class="material-content">
+            <h3 class="material-title">Story Developer</h3>
           </div>
-          <div class="workshop-card">
-            <h4 class="workshop-name">Sound Design & Music</h4>
-            <div class="workshop-links">
-              <a href="#" class="btn btn-small btn-dark" data-link="wedSoundSlides">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Slides
-              </a>
-              <a href="#" class="btn btn-small btn-outline" data-link="wedSoundPlan">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Plan
-              </a>
-            </div>
+          <svg class="material-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+
+        <a href="#" class="material-card" data-link="editor">
+          <div class="material-content">
+            <h3 class="material-title">Editor</h3>
           </div>
-          <div class="workshop-card">
-            <h4 class="workshop-name">Color Correction</h4>
-            <div class="workshop-links">
-              <a href="#" class="btn btn-small btn-dark" data-link="wedColorSlides">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Slides
-              </a>
-              <a href="#" class="btn btn-small btn-outline" data-link="wedColorPlan">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Plan
-              </a>
-            </div>
-          </div>
-          <div class="workshop-card">
-            <h4 class="workshop-name">Finalizing Your Film</h4>
-            <div class="workshop-links">
-              <a href="#" class="btn btn-small btn-dark" data-link="wedFinalSlides">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-                Slides
-              </a>
-              <a href="#" class="btn btn-small btn-outline" data-link="wedFinalPlan">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                Plan
-              </a>
-            </div>
-          </div>
-        </div>
+          <svg class="material-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
       </div>
     </div>
   </section>
