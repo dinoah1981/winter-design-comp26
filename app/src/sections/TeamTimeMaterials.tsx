@@ -1,5 +1,5 @@
 import { ScrollReveal } from '@/components/ScrollReveal';
-import { Presentation, Film, FileEdit, UserCheck, ExternalLink } from 'lucide-react';
+import { Presentation, Film, FileEdit, UserCheck, ExternalLink, ClipboardCheck } from 'lucide-react';
 
 const teamMaterials = [
   {
@@ -25,6 +25,30 @@ const teamMaterials = [
     description: 'Team organization document. Assign and track Director, Story Lead, Cinematographer, and Editor roles.',
     icon: UserCheck,
     href: '#',
+  },
+  {
+    title: '9th Grade Exit Ticket Responses',
+    description: 'View and track 9th grade exit ticket responses for advisory sessions.',
+    icon: ClipboardCheck,
+    href: 'https://docs.google.com/spreadsheets/d/1PHlWK1kyAUIh1I9Nzd3HnVYkAXmB8BmcTt6Z5eou3sY/edit?usp=sharing_eil_se_dm&ts=69b0043e',
+  },
+  {
+    title: '10th Grade Exit Ticket Responses',
+    description: 'View and track 10th grade exit ticket responses for advisory sessions.',
+    icon: ClipboardCheck,
+    href: 'https://docs.google.com/spreadsheets/d/1MP3GTlTvcBCPfoAA73DotaQ28gThYOORpXIK4vazvMY/edit?usp=sharing_eil_se_dm&ts=69b00447',
+  },
+  {
+    title: '11th Grade Exit Ticket Responses',
+    description: 'View and track 11th grade exit ticket responses for advisory sessions.',
+    icon: ClipboardCheck,
+    href: 'https://docs.google.com/spreadsheets/d/1SMmR2VJBrCcnuygnT5gpWsEOU_BXnUNBook8ws_aUsM/edit?usp=sharing_eil_se_dm&ts=69b0045f',
+  },
+  {
+    title: '12th Grade Exit Ticket Responses',
+    description: 'View and track 12th grade exit ticket responses for advisory sessions.',
+    icon: ClipboardCheck,
+    href: 'https://docs.google.com/spreadsheets/d/1AZ1TTVrw7_zjgBuxC3S7pm7fDccoxPeDrTrKHE8z10k/edit?usp=sharing_eil_se_dm&ts=69b00455',
   },
 ];
 
