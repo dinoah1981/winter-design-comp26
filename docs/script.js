@@ -87,7 +87,7 @@ function initHeaderScroll() {
 function initScrollReveal() {
   // Add reveal class to sections that should animate
   const revealElements = document.querySelectorAll(
-    '.section-header, .material-card, .team-item, .workshop-day, .prize-card, .resource-card, .overview-text, .overview-image, .stats'
+    '.section-header, .film-player, .filmstrip, .material-card, .team-item, .workshop-day, .prize-card, .resource-card, .overview-text, .overview-image, .stats'
   );
   
   revealElements.forEach((el, index) => {
@@ -138,10 +138,73 @@ function initSmoothScroll() {
 }
 
 // ============================================
+// FILM PLAYER
+// ============================================
+function initFilmPlayer() {
+  if (typeof FILMS === 'undefined' || !FILMS.length) return;
+
+  const frame = document.getElementById('filmFrame');
+  const titleEl = document.getElementById('filmTitle');
+  const metaEl = document.getElementById('filmMeta');
+  const counterEl = document.getElementById('filmCounter');
+  const strip = document.getElementById('filmstrip');
+  const prevBtn = document.getElementById('filmPrev');
+  const nextBtn = document.getElementById('filmNext');
+
+  if (!frame || !strip) return;
+
+  let current = 0;
+
+  // Build filmstrip
+  FILMS.forEach((film, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'filmstrip-item';
+    btn.innerHTML =
+      '<span class="filmstrip-num">Film ' + (i + 1) + '</span>' +
+      '<span class="filmstrip-director">' + film.director + '</span>' +
+      '<span class="filmstrip-grade">Grade ' + film.grade + '</span>';
+    btn.addEventListener('click', () => loadFilm(i));
+    strip.appendChild(btn);
+  });
+
+  function loadFilm(index) {
+    current = index;
+    const film = FILMS[index];
+    frame.src = 'https://drive.google.com/file/d/' + film.id + '/preview';
+
+    const displayTitle = film.title || 'Film ' + (index + 1);
+    titleEl.textContent = displayTitle;
+    metaEl.textContent = 'Directed by ' + film.director + '  \u2022  Grade ' + film.grade;
+    counterEl.textContent = (index + 1) + ' / ' + FILMS.length;
+
+    // Update filmstrip active state
+    const items = strip.querySelectorAll('.filmstrip-item');
+    items.forEach((item, i) => {
+      item.classList.toggle('active', i === index);
+    });
+
+    // Scroll active item into view
+    items[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    loadFilm(current === 0 ? FILMS.length - 1 : current - 1);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    loadFilm(current === FILMS.length - 1 ? 0 : current + 1);
+  });
+
+  // Load first film
+  loadFilm(0);
+}
+
+// ============================================
 // INITIALIZE EVERYTHING
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
   applyLinks();
+  initFilmPlayer();
   initMobileMenu();
   initHeaderScroll();
   initScrollReveal();

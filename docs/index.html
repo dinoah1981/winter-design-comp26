@@ -18,6 +18,21 @@
   -->
   <script>
     // BASIC COMPETITION MATERIALS LINKS
+    // TOP 10 STUDENT FILMS
+    const FILMS = [
+      { id: '1lxWY0jk71us8tIwuI5nru-fK9UY70Bm4', director: 'Dayna Tabales', grade: 9, title: '' },
+      { id: '16O8OwUAEE0t98jYwmEaTutWeo9ZVt2cY', director: 'Christal Mata', grade: 9, title: '' },
+      { id: '1gH8zzRboNrMbcGgsncHR8r3DSxFn0rHn', director: 'Melanie Hernandez', grade: 10, title: '' },
+      { id: '1tC2qPh73DnYu7z6qBeB6-R_7ZXkzYvEd', director: 'Armani Castro', grade: 10, title: '' },
+      { id: '1Sxhhrp1sM3kSCahMoyY0AN3c4Pm8u1T9', director: 'Skylene Chavez', grade: 10, title: '' },
+      { id: '1kaJ2mZybrasHcZ6qIkIrFfVzhsUPKi2P', director: 'Analia Perez', grade: 10, title: '' },
+      { id: '1zdrxR2AGbGM44FptyzeP499nYaUHt5vE', director: 'Diop-Mejia & Yate', grade: 11, title: 'Politics of Black Hair' },
+      { id: '1d5SnJur8XYsFPcD8IzeK1HvKPbIPU4TR', director: 'Justin Ayala', grade: 11, title: 'What Makes a Block Feel Like Home' },
+      { id: '1OOO25G_YjyXDq3XkciwVCL7yGM9Zpr0w', director: 'Aisha Fofanah', grade: 12, title: '' },
+      { id: '1yhVikmHDUPd-0qEAlcBOacLl58Dlra93', director: 'Jelianis', grade: 12, title: '' },
+    ];
+
+    // BASIC COMPETITION MATERIALS LINKS
     const LINKS = {
       // Basic Materials
       schedule: "https://docs.google.com/spreadsheets/d/1Q9vmMYLbfpOtRFeLr9piP7ykH6BEVXCWLZGHDy09nGg/edit?gid=19588253#gid=19588253",
@@ -58,6 +73,7 @@
     <div class="container header-content">
       <a href="#" class="logo">FOR THE CULTURE</a>
       <nav class="nav">
+        <a href="#films" class="nav-link">Films</a>
         <a href="#materials" class="nav-link">Materials</a>
         <a href="#workshops" class="nav-link">Schedule</a>
         <a href="#resources" class="nav-link">Resources</a>
@@ -69,6 +85,7 @@
       </button>
     </div>
     <nav class="mobile-nav" id="mobileNav">
+      <a href="#films" class="mobile-nav-link">Films</a>
       <a href="#materials" class="mobile-nav-link">Materials</a>
       <a href="#workshops" class="mobile-nav-link">Schedule</a>
       <a href="#resources" class="mobile-nav-link">Resources</a>
@@ -93,6 +110,44 @@
       </svg>
     </div>
   </section>
+
+  <!-- Film Showcase Section -->
+  <section class="film-showcase" id="films">
+    <div class="container">
+      <div class="section-header text-center">
+        <p class="section-eyebrow light">Top 10</p>
+        <h2 class="section-title light">Student Films</h2>
+      </div>
+      <div class="film-player">
+        <div class="film-player-frame">
+          <iframe id="filmFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="film-controls">
+          <button class="film-btn" id="filmPrev" aria-label="Previous film">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </button>
+          <div class="film-info">
+            <p class="film-counter" id="filmCounter"></p>
+            <h3 class="film-current-title" id="filmTitle"></h3>
+            <p class="film-current-meta" id="filmMeta"></p>
+          </div>
+          <button class="film-btn" id="filmNext" aria-label="Next film">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="filmstrip" id="filmstrip"></div>
+    </div>
+  </section>
+
+  <!-- Cinematic Divider -->
+  <div class="parallax-divider">
+    <img src="images/filmmaker-1.avif" alt="" loading="lazy">
+  </div>
 
   <!-- Overview Section -->
   <section class="overview">

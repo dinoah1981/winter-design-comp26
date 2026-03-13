@@ -402,6 +402,181 @@ a {
 }
 
 /* ============================================
+   FILM SHOWCASE SECTION
+   ============================================ */
+.film-showcase {
+  background: var(--color-black);
+  padding: 80px 0;
+}
+
+@media (min-width: 768px) {
+  .film-showcase {
+    padding: 120px 0;
+  }
+}
+
+.film-player {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.film-player-frame {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.film-player-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.film-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.film-btn {
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.film-btn:hover {
+  background: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-white);
+}
+
+.film-info {
+  flex: 1;
+  text-align: center;
+  min-width: 0;
+}
+
+.film-counter {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 4px;
+}
+
+.film-current-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.film-current-meta {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 2px;
+}
+
+/* Filmstrip */
+.filmstrip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 16px 0 8px;
+  margin-top: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.2) transparent;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filmstrip::-webkit-scrollbar {
+  height: 4px;
+}
+
+.filmstrip::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filmstrip::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.filmstrip-item {
+  flex-shrink: 0;
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+  font-family: var(--font-primary);
+  min-width: 0;
+}
+
+.filmstrip-item:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--color-white);
+}
+
+.filmstrip-item.active {
+  background: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.filmstrip-num {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.filmstrip-item.active .filmstrip-num {
+  opacity: 1;
+}
+
+.filmstrip-director {
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+.filmstrip-grade {
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.5;
+  margin-top: 1px;
+}
+
+.filmstrip-item.active .filmstrip-grade {
+  opacity: 0.7;
+}
+
+/* ============================================
    OVERVIEW SECTION
    ============================================ */
 .overview {
