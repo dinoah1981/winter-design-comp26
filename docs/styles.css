@@ -1057,22 +1057,26 @@ a {
 }
 
 /* ============================================
-   DOCUMENTARY FEATURE SECTION
+   DOCUMENTARY FEATURE (INLINE)
    ============================================ */
-.doc-feature {
-  background: var(--color-off-white);
-  padding: 80px 0;
+.doc-feature-inline {
+  max-width: 960px;
+  margin: 40px auto 0;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@media (min-width: 768px) {
-  .doc-feature {
-    padding: 120px 0;
-  }
+.doc-inline-title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--color-white);
+  margin-bottom: 20px;
 }
 
 .doc-player {
   max-width: 640px;
-  margin: 0 auto;
 }
 
 .doc-player-frame {
@@ -1080,7 +1084,7 @@ a {
   width: 100%;
   padding-bottom: 56.25%;
   background: #111;
-  border: 1px solid var(--color-gray-200);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .doc-player-frame iframe {
