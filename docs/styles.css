@@ -1057,26 +1057,26 @@ a {
 }
 
 /* ============================================
-   DOCUMENTARY FEATURE (INLINE)
+   DOCUMENTARY FEATURE CARD
    ============================================ */
-.doc-feature-inline {
+.doc-feature-card {
   max-width: 960px;
-  margin: 40px auto 0;
-  padding-top: 32px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 64px auto 0;
+  padding: 48px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
 }
 
-.doc-inline-title {
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
-  color: var(--color-white);
-  margin-bottom: 20px;
+@media (max-width: 640px) {
+  .doc-feature-card {
+    padding: 32px 20px;
+    margin-top: 48px;
+  }
 }
 
 .doc-player {
   max-width: 640px;
+  margin: 0 auto;
 }
 
 .doc-player-frame {
